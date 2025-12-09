@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  transition: 0.25s ease;
 }
 .cab {
     display: grid;
@@ -22,7 +23,7 @@
     gap: 5px;
     padding: 5px;
 }
-.logo-nu button {
+.butheader {
     background-color: #820ad1;
     color: white;
     border: none;
@@ -45,7 +46,7 @@ section.banner {
     background-image: url(https://tse2.mm.bing.net/th/id/OIP.vpJKq-XTAqrC_oECe1arkgHaF7?pid=Api&P=0&h=180);
     background-size: cover;
     background-position: center;
-    height: 110vh;
+    height: 100vh;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -53,6 +54,7 @@ section.banner {
     align-items: center;
     color: white;
     text-align: center;
+    border-radius: 0px 0px 20px 20px;
 }
 .titulo-banner {
     font-size: 1.3rem;
@@ -60,31 +62,83 @@ section.banner {
     text-align: left;
     padding: 25px;
 }
-section div > button {
+.butbanner, .butform {
     background-color: #820ad1;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 15px 30px;
+    margin-top: 20px;
     cursor: pointer;
     font-size: 1.2rem;
     position: relative;
     text-align: left;
 }
+.butform {
+    width: 95%;
+}
 .caixinha-pergunta {
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 90%;
     font-size: 1rem;
     background-color: whitesmoke;
     padding: 10px 20px;
     border-radius: 20px;
 }
-.caixinha-pergunta textarea {
+.caixinha-pergunta #cpf {
     margin-top: 5px;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     border: 1px solid #ccc;
     width: 95%;
     font-size: 1rem;
 
     text-align: left;
+}
+.caixinha-pergunta p {
+    color: black;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 15px;
+}
+
+.nubank-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #444;
+}
+
+.hero-text button {
+    background-color: #8A05BE; /* roxo Nubank */
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.hero-text button:hover {
+    background-color: #5a008c;
+}
+
+.hero-media img {
+    width: 420px;
+    border-radius: 20px;
 }
